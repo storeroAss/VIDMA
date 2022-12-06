@@ -1214,10 +1214,14 @@ section {
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
+
 .pricing .row {
   padding-top: 40px;
 }
-
+.row p{
+  color: black;
+  text-justify:initial;
+}
 .pricing .box {
   padding: 60px 40px;
   box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
