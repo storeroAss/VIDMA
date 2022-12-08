@@ -42,7 +42,7 @@
       <h1 class="logo me-auto"><a href="index.html"><font style="vertical-align: inherit">VIDMA</font></a></h1>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="#hero">INICIO</a></li>
+          <li><a class="nav-link scrollto" href="index.html">INICIO</a></li>
           <li><a class="nav-link scrollto" href="#about">¿Quienes Somoa?</a></li>
           <li><a class="nav-link scrollto" href="oportunidades.html">Mis Oportunidades</a></li>
           <li><a class="nav-link scrollto active" href="contac.html">contacto</a></li>
@@ -92,28 +92,28 @@
   
         </div>
   
-        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+        <div  class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+          <form  role="form" class="php-email-form">
             <div class="row">
               <div class="form-group col-md-6">
                 <label for="name">Tu Nombre:</label>
-                <input type="text" name="name" class="form-control" id="name" required>
+                <input type="text" name="nombre" class="form-control" id="name" required>
               </div>
 
               <div class="form-group col-md-6">
                 <label for="name">Tu Correo:</label>
-                <input type="email" class="form-control" name="email" id="email" required>
+                <input type="email" class="form-control" name="correo" id="email" placeholder="Ejemplo@gmail.com" required>
               </div>
             </div>
 
             <div class="form-group">
-              <label for="name">Tema:</label>
-              <input type="text" class="form-control" name="subject" id="subject" required>
+              <label for="name">Asunto:</label>
+              <input type="text" class="form-control" name="tema" id="subject" required>
             </div>
 
             <div class="form-group">
               <label for="name">Mensaje:</label>
-              <textarea class="form-control" name="message" rows="10" required></textarea>
+              <textarea class="form-control" name="mensaje" rows="10" required></textarea>
             </div>
 
             <div class="my-3">
@@ -122,8 +122,11 @@
               <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
             </div>
 
-            <div class="text-center"><button type="submit">Enviar</button></div>
+            <div class="text-center"><button type="submit" onclick="EnviarCorreo();">Enviar</button></div>
           </form>
+          <?php
+            include("envio.php");
+          ?>
         </div>
       </div>
     </div>
@@ -172,7 +175,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
+  <script type="text/javascript" src="/assets/js/funciones.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
