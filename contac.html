@@ -36,7 +36,6 @@
   ======================================================== -->
 </head>
 <body>
-
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
@@ -44,7 +43,10 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="index.html">INICIO</a></li>
+
           <li><a class="nav-link scrollto" href="index.html">¿Quienes Somoa?</a></li>
+
+
           <li><a class="nav-link scrollto" href="oportunidades.html">Mis Oportunidades</a></li>
           <li><a class="nav-link scrollto active" href="contac.html">contacto</a></li>
         </ul>
@@ -53,12 +55,14 @@
 
     </div>
   </header><!-- End Header -->
+
   <!-- ======= Contact Section ======= -->
   <section id="contact" class="contact">
     <div class="container" data-aos="fade-up">
   
       <div class="section-title">
-        <h2>Contactenos</h2>
+
+        <h2>contactenos</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
       </div>
 
@@ -67,94 +71,116 @@
           <div class="info">
             <div class="address">
               <i class="bi bi-geo-alt"></i>
-              <h4>Ubicación:</h4>
-              <p>Neiva - Huila, Colombia</p>
+
+              <h4>Ubicacion:</h4>
+              <p>Neiva, Hula</p>
             </div>
   
             <div class="email">
               <i class="bi bi-envelope"></i>
               <h4>Correo:</h4>
-              <p>vidmaasesorias@gmail.com</p>
+
+              <p>vidmaasesoria@gmail.com</p>
+
             </div>
   
             <div class="phone">
               <i class="bi bi-phone"></i>
-              <h4>Celular:</h4>
-              <p>320 4678455</p>
+
+              <h4>Telefono:</h4>
+              <p>+57 3204678455</p>
+
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39018.81416135434!2d-75.28036323047314!3d2.9334559302224186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b7467092d6c87%3A0xa4328ffcb8aa8d8d!2sParque%20Campo%20Nu%C3%B1ez!5e0!3m2!1ses!2sco!4v1670263219160!5m2!1ses!2sco" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            <div class="container-fluid">
+              <div class="map-responsive">
+             <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          </div>
+          
           </div>
   
         </div>
   
-        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+        <div  class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+          <form  role="form" class="php-email-form">
             <div class="row">
               <div class="form-group col-md-6">
-                <label for="name">Nombre</label>
-                <input type="text" name="name" class="form-control" id="name" required>
+
+                <label for="name">Tu Nombre:</label>
+                <input type="text" name="nombre" class="form-control" id="name" required>
               </div>
 
               <div class="form-group col-md-6">
-                <label for="name">Email</label>
-                <input type="email" class="form-control" name="email" id="email" required>
+                <label for="name">Tu Correo:</label>
+                <input type="email" class="form-control" name="correo" id="email" placeholder="Ejemplo@gmail.com" required>
+
               </div>
             </div>
 
             <div class="form-group">
-              <label for="name">Asunto</label>
-              <input type="text" class="form-control" name="subject" id="subject" required>
+
+              <label for="name">Telefono:</label>
+              <input type="text" class="form-control" name="telefono" id="subject" required>
             </div>
 
             <div class="form-group">
-              <label for="name">Mensaje</label>
-              <textarea class="form-control" name="message" rows="10" required></textarea>
+              <label for="name">Mensaje:</label>
+              <textarea class="form-control" name="mensaje" rows="10" required></textarea>
+
             </div>
 
             <div class="my-3">
-              <div class="loading">Loading</div>
+              <div class="loading">Cargando</div>
               <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
+              <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
             </div>
 
-            <div class="text-center"><button type="submit">Enviar</button></div>
+            <div class="text-center"><button type="submit" onclick="EnviarCorreo();">Enviar</button></div>
+
           </form>
+          <?php
+            include("envio.php");
+          ?>
         </div>
       </div>
     </div>
   </section><!-- End Contact Section -->
 
-     <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
 
-          <div class="col-lg-4 col-md-2 footer-contact">
-            <h3>VIDMA</h3>
-            <p>
-              Nieva, Huila <br>
-              <strong>Telefonos:</strong> +57 3204678455<br>
-              <strong>Correo:</strong> vidmaasesoria@gmail.com<br>
-            </p>
-          </div>
-          <div class="col-lg-4 col-md-2 footer-links">
-            <p>Siguenos en nuestras redes sociales.</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-links">
+              <p>
+                Siguenos en nuestras redes sociales.
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
+  
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>VIDMA</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+        </div>
+
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -175,8 +201,6 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
