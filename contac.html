@@ -42,7 +42,7 @@
       <h1 class="logo me-auto"><a href="index.html"><font style="vertical-align: inherit"><img src="assets/img/pdf logo 2_page-0001.jpg" width="120px" height="250px"></font></a></h1>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="index.html">INICIO</a></li>
+          <li><a class="nav-link scrollto" href="index.html">Inicio</a></li>
           <li><a class="nav-link scrollto" href="oportunidades.html">Mis Oportunidades</a></li>
           <li><a class="nav-link scrollto active" href="contac.html">contacto</a></li>
         </ul>
@@ -90,6 +90,7 @@
             <div class="container-fluid">
               <div class="map-responsive">
              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.6117975707402!2d-75.29125258612966!3d2.9274008552943283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b747c86ca9935%3A0x923d9cdf99400bf2!2sParque%20Central%20Santander!5e0!3m2!1ses!2sco!4v1670858453881!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
             </div>
           </div>
           
@@ -102,21 +103,29 @@
             <div class="row">
               <div class="form-group col-md-6">
 
-                <label for="name">Tu Nombre:</label>
+                <label for="name">Nombre:</label>
                 <input type="text" name="nombre" class="form-control" id="name" required>
               </div>
 
               <div class="form-group col-md-6">
-                <label for="name">Tu Correo:</label>
-                <input type="email" class="form-control" name="correo" id="email" placeholder="Ejemplo@gmail.com" required>
+                <label for="name">Cedula:</label>
+                <input type="text" name="cedula" class="form-control" id="name" required>
 
               </div>
             </div>
 
-            <div class="form-group">
+            <div class="row">
+              <div class="form-group col-md-6">
 
-              <label for="name">Telefono:</label>
-              <input type="text" class="form-control" name="telefono" id="subject" required>
+                <label for="name">Telefono:</label>
+                <input type="text" name="telefono" class="form-control" id="name" required>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="name">Correo:</label>
+                <input type="email" class="form-control" name="correo" id="email" placeholder="Ejemplo@gmail.com" required>
+
+              </div>
             </div>
 
             <div class="form-group">
@@ -134,9 +143,6 @@
             <div class="text-center"><button type="submit" onclick="EnviarCorreo();">Enviar</button></div>
 
           </form>
-          <?php
-            include("envio.php");
-          ?>
         </div>
       </div>
     </div>
@@ -156,6 +162,7 @@
 
   
       <div class="container footer-bottom clearfix">
+        <h1 class="logo me-auto"><a href="index.html"><font style="vertical-align: inherit"><img src="assets/img/pdf logo 2_page-0001.jpg" width="120px" height="70px"></font></a></h1>
         <div class="copyright">
           &copy; Copyright <strong><span>Vidma</span></strong>. Todos los derechos reservados
         </div>
