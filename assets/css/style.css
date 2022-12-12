@@ -154,12 +154,12 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  background-color:#37517e;
+  background-color:#201f1f;
 }
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgb(0, 0, 0);
+  background: #201f1f;
 }
 
 #header .logo {
@@ -346,7 +346,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(212, 175, 55);
+  background: #201f1f;
   transition: 0.3s;
   z-index: 999;
 }
@@ -362,7 +362,6 @@ h6 {
   position: absolute;
   top: 55px;
   right: 15px;
-  bottom: 15px;
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
