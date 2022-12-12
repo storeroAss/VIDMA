@@ -5,7 +5,7 @@
     $correo = $_POST['correo'];
     $mensaje = $_POST['mensaje'];
     
-    $emailTo ="vidmaasesoria@gmail.com";
+    $emailTo ="vidmaasesorias@gmail.com";
 
     $asunto = "Nuevo mensaje desde la Pagina de Vidma";
     $txt = "De: $nombre \n";
